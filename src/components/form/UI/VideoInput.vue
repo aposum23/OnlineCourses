@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {computed, onBeforeUnmount, ref, watch} from "vue";
+import {ref, watch} from "vue";
 
 defineProps<{
   id: string
@@ -18,6 +18,7 @@ function updateVideoSrc():void {
   const match = inputVideoUrl.value.match(/[-\w]{25,}/);
   videoSrc.value = `https://drive.google.com/file/d/${match[0]}/preview?autoplay=1`;
 }
+// TODO: Нужно исправить ошибку CSP которая не дает воспроизводить видео при добавлении ссылки
 </script>
 
 <template>
