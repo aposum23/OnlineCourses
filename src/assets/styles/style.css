@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "SourceCodePro";
+    src: url('../fonts/SourceCodePro-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "NotoSansKR";
+    src: url('../fonts/NotoSansKR-VariableFont_wght.ttf');
+}
+
+:root {
+    --text-color: #ffffff;
+    --text-color-hover: #d7cf9e;
+    --text-color-selected: #8eb2f6;
+    --main-background: #2d2e31;
+    --additional-background: #3b4451;
+    --yellow: #ffc600;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--main-background);
+}
