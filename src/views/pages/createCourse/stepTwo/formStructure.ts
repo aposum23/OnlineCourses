@@ -1,19 +1,19 @@
-import {FormStructure} from "@/components/form/formSelectorTypes.ts";
+import {FormElementEnum, FormStructure} from "@/components/form/formSelectorTypes.ts";
 
 export const CREATE_COURSE_STEP_TWO_FORM: FormStructure[] = [
     {
         id: 'name',
         label: 'Название урока',
-        type: 'text'
+        type: FormElementEnum.text
     },
     {
         id: 'video',
         label: 'Видео урока',
-        type: 'video'
+        type: FormElementEnum.video
     },
     {
         id: 'description',
         label: 'Текст к уроку',
-        type: 'description',
+        type: FormElementEnum.description,
     },
 ]

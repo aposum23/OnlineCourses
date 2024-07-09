@@ -1,20 +1,20 @@
-import {FormStructure} from "@/components/form/formSelectorTypes.ts";
+import {FormElementEnum, FormStructure} from "@/components/form/formSelectorTypes.ts";
 
 export const CREATE_COURSE_STEP_ONE_FORM: FormStructure[] = [
     {
         id: 'name',
         label: 'Название курса',
-        type: 'text'
+        type: FormElementEnum.text
     },
     {
         id: 'image',
         label: 'Заставка курса',
-        type: 'image'
+        type: FormElementEnum.img
     },
     {
         id: 'description',
         label: 'Описание курса',
-        type: 'description',
+        type: FormElementEnum.description,
         maxSymbolCount: 300
     },
 ]
